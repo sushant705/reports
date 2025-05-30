@@ -1,0 +1,59 @@
+#header{
+    background-color: #d4f6cc;
+    height: 8vh;
+    width:101vw;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+.body6{
+    background-color:dimgray;
+}
+
+#logout_link{
+    text-decoration: none;
+    color:white;
+}
+#left_sidebar{
+    margin-top: 50px;
+    width:13vw;
+    height: 30vh;
+    display: inline-block;
+}
+#left_sidebar table tr{
+    background-color: #0096ff;
+    color: white;
+    font-size: 20px;
+
+}
+#left_sidebar table tr:hover{
+    background-color: #d4f6cc;
+    color: black;
+}
+#logout_link{
+    text-decoration: none;
+    color:white;
+}
+#logout_link:hover{
+    background-color: #d4f6cc;
+    color: black;
+}
+.in:hover{
+    background-color: #d4f6cc;
+    color: black;
+    text-decoration: none;
+}
+.in{
+    text-decoration: none;
+    color:white;
+}
+#right_sidebar{
+    padding: 35px;
+    height: 25vh;
+    width: 25vw;
+    display: inline-block;
+    color: white;
+}
+
+/* This css is for user_dashboard   */

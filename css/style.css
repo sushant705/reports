@@ -1,0 +1,171 @@
+/* Modern Task Management System CSS */
+:root {
+    --primary: #4361ee;
+    --secondary: #3a0ca3;
+    --success: #4cc9f0;
+    --warning: #f72585;
+    --info: #7209b7;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --sidebar-bg: #4361ee;
+    --sidebar-hover: #3a0ca3;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+#body1{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#body2{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#body2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#body3, #body4, #body5{
+    background-color: #f5f7fa;
+}
+
+/* Homepage Card */
+#homepage {
+    background-color: var(--card-bg);
+    position: relative;
+    top: 25vh;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 35vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+#homepage h2 {
+    color: var(--dark);
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#homepage .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#homepage .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Pages */
+#login_homepage, #register_homepage, #admin_homepage {
+    background-color: var(--card-bg);
+    position: relative;
+    top: 20vh;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 450px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+#login_homepage h3, #register_homepage h3, #admin_homepage h3 {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    background-color: #f1f3f9;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.3);
+    outline: none;
+}
+
+.btn-warning, .btn-success, .btn-info, .btn-danger {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-info {
+    background-color: var(--info);
+    color: white;
+}
+
+.btn-danger {
+    background-color: #e63946;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #homepage, #login_homepage, #register_homepage, #admin_homepage {
+        width: 90%;
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
